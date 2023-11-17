@@ -68,4 +68,5 @@ Follow these instructions to run the Jupyter notebook for predicting customer ch
 
 Feel free to explore the details within each section of the notebook. If you encounter any issues, ensure that the dataset is correctly located and that the Python environment has the necessary dependencies installed.
 
-Happy analyzing!
+Here is a link to a short demo video of the application:
+https://drive.google.com/file/d/1kD2psIubdc8HTAh1NKIStDSwLY4CKhF1/view?usp=sharing
