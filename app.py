@@ -55,12 +55,14 @@ if st.button("Predict"):
     # Scale the input data using the loaded scaler
     scaled_input_data = scaler.transform(data)
 
-    # Make predictions using the model
-    prediction_proba = churn_model.predict_proba(scaled_input_data)
+    # Make predictions
+    prediction = model.predict(scaled_input_data)[0]
 
     # Display the prediction result and confidence
     st.subheader("Churn Prediction Result:")
-    if prediction_proba[0, 1] > 0.5:
+
+    st.subheader("Prediction:")
+    st.write(f"The predicted output is: {prediction}")
         st.warning(
             f"The customer is likely to churn with {prediction_proba[0, 1] * 100:.2f}% confidence."
         )
